@@ -3,8 +3,8 @@ Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 ## Mijn spel: *naam van het spel*
 Gemaakt door: 0
 
-- *naam van leerling 1*
-- *naam van leerling 2*
+- *Yusuf ALiskan 1*
+- *Eray Ozturk 2*
 
 ### Beschrijving
 *korte beschrijving van het spel, wat je kunt doen in het spel, wat het doel is*
