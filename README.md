@@ -7,7 +7,7 @@ Gemaakt door:
 - *Eray Ozturk 2*
 
 ### Beschrijving
-*we gaan een 1 ball pool maken. de ball moet in de gaatjes terecht komen anders krijg je geen punten voor dit level en moet je opnieuw beginnen.*
+*we gaan een 1 ball pool game maken. de ball moet in de gaatjes terecht komen anders krijg je geen punten voor dit level en moet je opnieuw beginnen.*
 
 ## Mijn planning
 Werk de planning af van boven naar beneden<br>
@@ -16,12 +16,12 @@ Geef aan met [x] welke onderdelen af zijn
 ### Basisstappen
 Basis: uitleg, spelen, afgaan en punten
 - [x] 1. maak index.html, style.css en script.js met canvas
-- [ ] 2. teken speler
+- [ ] 2. teken een witte bal
         - Zet je code in de functie tekenAlles()
-- [ ] 3. beweeg speler
+- [ ] 3. beweeg witte bal
         - Zet je code in de functie beweegAlles()
-        - Kies de afmeting van speler
-        - Gebruik variabalen spelerX en spelerY als middelpunt van de speler
+        - Kies de afmeting van de bal
+        - Gebruik variabalen balX en balY als middelpunt van de bal
 - [ ] 4. *(pas de volgende stappen in de planning zelf aan)*
 - [ ] x. teken je tegenspeler (vijanden of dingen die je moet pakken of doelen of ...)
 - [ ] x. teken een bal, kogel (als die in je spel zit)
