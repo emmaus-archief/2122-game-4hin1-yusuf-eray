@@ -3,8 +3,8 @@ Deze game is gebaseerd op het template voor 4HV van het Emmauscollege Rotterdam
 ## Mijn spel: *naam van het spel*
 Gemaakt door: 
 
-- *Yusuf ALiskan 1*
-- *Eray Ozturk 2*
+- *Yusuf Aliskan 1*
+- *Eray Ozturk (R6) 2*
 
 ### Beschrijving
 *we gaan een 1 ball pool game maken. de ball moet in de gaatjes terecht komen anders krijg je geen punten voor dit level en moet je opnieuw beginnen.*

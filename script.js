@@ -17,6 +17,8 @@ var spelStatus = SPELEN;
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
 
+var vijandX = 600; // x-positie van vijand
+var vijandY = 500; // y-positie van vijand
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -39,6 +41,10 @@ var beweegAlles = function () {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
+  if spelerX - vijandX < 50 &&
+     vijandX - spelerX < 50 &&
+    
+    
 
   // botsing kogel tegen vijand
 
