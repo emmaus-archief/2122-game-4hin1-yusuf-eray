@@ -59,7 +59,7 @@ var tekenAlles = function () {
   // achtergrond
 
   // vijand
-
+    
   // kogel
 
   // speler
