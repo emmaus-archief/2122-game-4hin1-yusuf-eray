@@ -16,7 +16,7 @@ var spelStatus = SPELEN;
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
 var snelheidX = 1;
-var snelheidY = 1
+var snelheidY = 1;
 var vijandX = 600;
 var vijandY = 200;
 /* ********************************************* */
