@@ -9,7 +9,6 @@
 /* ********************************************* */
 /* globale variabelen die je gebruikt in je game */
 /* ********************************************* */
-
 const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
@@ -17,6 +16,7 @@ var spelStatus = SPELEN;
 var spelerX = 600; // x-positie van speler
 var spelerY = 600; // y-positie van speler
 var snelheidX = 1;
+var snelheidY = 1
 var vijandX = 600;
 var vijandY = 200;
 /* ********************************************* */
@@ -31,12 +31,12 @@ var beweegAlles = function () {
  if (mouseIsPressed) {
    // nieuwe waaarde voor snelheidX en snelheidY maken
    snelheidX = (mouseX - spelerX) /100;
-   
+   snelheidY = (mouseY - spelerY) /100;
  }
 
   
-  spelerX=spelerX+snelheidX;
-    spelerY=spelerY+1;
+  spelerX = spelerX + snelheidX;
+    spelerY = spelerY + snelheidY;
   // vijand
 
   // kogel
