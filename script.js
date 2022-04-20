@@ -13,12 +13,12 @@ const SPELEN = 1;
 const GAMEOVER = 2;
 var spelStatus = SPELEN;
 
-var spelerX = 600; // x-positie van speler
-var spelerY = 600; // y-positie van speler
+var spelerX = 200; // x-positie van speler
+var spelerY = 400; // y-positie van speler
 var snelheidX = 1;
 var snelheidY = 1;
-var vijandX = 600;
-var vijandY = 200;
+var vijandX = 1200;
+var vijandY = 400;
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -61,13 +61,16 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
-   background 
+   fill ("green");
+   rect(0,0, 1280, 720);
  
 
   // kogel
-
+     fill ('green');
+     
   // speler
   fill("white");
+  
   ellipse(spelerX - 50, spelerY - 10, 80, 80);
    // vijand
   fill("black");
@@ -100,7 +103,7 @@ function setup() {
   createCanvas(1280, 720);
 
   // Kleur de achtergrond blauw, zodat je het kunt zien
-  background('lightgreen');
+  background('green');
 }
  
 /**
