@@ -28,15 +28,18 @@ var vijandY = 400;
  */
 var beweegAlles = function () {
   // speler
- if (mouseIsPressed) {
-   // nieuwe waaarde voor snelheidX en snelheidY maken
-   snelheidX = (mouseX - spelerX) /100;
-   snelheidY = (mouseY - spelerY) /100;
- }
-
+  if (mouseIsPressed) {
+    // nieuwe waaarde voor snelheidX en snelheidY maken
+    snelheidX = (mouseX - spelerX) /100;
+    snelheidY = (mouseY - spelerY) /100;
+  }
+  if (spelerX < 100) {
+    snelheidX = snelheidX * -1;
+  }
   
   spelerX = spelerX + snelheidX;
-    spelerY = spelerY + snelheidY;
+  spelerY = spelerY + snelheidY;
+  console.log("snelheidX =" + snelheidX);
   // vijand
 
   // kogel
