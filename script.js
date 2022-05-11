@@ -49,8 +49,11 @@ var beweegAlles = function () {
  */
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
-
-  // botsing kogel tegen vijand
+     if (spelerX === vijandX &&
+         spelerY === vijandY) {
+        console.log("botsing"); 
+     }
+ // botsing kogel tegen vijand
 
   // update punten en health
 
