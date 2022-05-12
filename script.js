@@ -36,6 +36,8 @@ var beweegAlles = function () {
   if (spelerX < 100) {
     snelheidX = snelheidX * -1;
   }
+
+  if (spelerY )
   
   spelerX = spelerX + snelheidX;
   spelerY = spelerY + snelheidY;
