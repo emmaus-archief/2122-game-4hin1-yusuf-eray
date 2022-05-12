@@ -33,12 +33,21 @@ var beweegAlles = function () {
     snelheidX = (mouseX - spelerX) /100;
     snelheidY = (mouseY - spelerY) /100;
   }
-  if (spelerX < 100) {
+  if (spelerX < 100 ) {
     snelheidX = snelheidX * -1;
   }
 
-  if (spelerY )
-  
+  if (spelerY < 54) {
+    snelheidY = snelheidY * -1;
+   }
+
+  if (spelerX > 1283) {
+    snelheidX = snelheidX * -1;
+  }  
+
+  if (spelerY > 696) {
+    snelheidY = snelheidY * -1;
+  }
   spelerX = spelerX + snelheidX;
   spelerY = spelerY + snelheidY;
   console.log("snelheidX =" + snelheidX);
