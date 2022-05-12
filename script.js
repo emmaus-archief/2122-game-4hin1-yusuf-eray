@@ -64,10 +64,11 @@ var beweegAlles = function () {
 var verwerkBotsing = function () {
   // botsing speler tegen vijand
      if (spelerX === vijandX &&
-         spelerY === vijandY) {
+         spelerY - vijandY <100); {
         console.log("botsing"); 
      }
  // botsing kogel tegen vijand
+    
 
   // update punten en health
 
