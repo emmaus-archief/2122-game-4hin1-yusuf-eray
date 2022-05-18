@@ -6,6 +6,7 @@
    voeg er je eigen code aan toe.
  */
 
+
 /* ********************************************* */
 /* globale variabelen die je gebruikt in je game */
 /* ********************************************* */
