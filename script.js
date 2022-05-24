@@ -16,8 +16,8 @@ var spelStatus = SPELEN;
 
 var spelerX = 200; // x-positie van speler
 var spelerY = 400; // y-positie van speler
-var snelheidX = 1;
-var snelheidY = 1;
+var snelheidX = 2;
+var snelheidY = 2;
 var vijandX = 1200;
 var vijandY = 400;
 /* ********************************************* */
@@ -52,6 +52,11 @@ var beweegAlles = function () {
   spelerX = spelerX + snelheidX;
   spelerY = spelerY + snelheidY;
   console.log("snelheidX =" + snelheidX);
+  // speler remmen
+ snelheidX = snelheidX * 0.99;
+ snelheidY = snelheidY * 0.99;
+  
+  
   // vijand
 
   // kogel
