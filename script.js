@@ -12,6 +12,7 @@
 /* ********************************************* */
 const SPELEN = 1;
 const GAMEOVER = 2;
+const UITLEG = 8;
 var spelStatus = SPELEN;
 
 var spelerX = 200; // x-positie van speler
@@ -111,7 +112,15 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-  // check of HP 0 is , of tijd op is, of ...
+   if (spelerX - vijandX <99 &&
+         spelerX - vijandX > -99 &&
+         spelerY - vijandY <99 &&
+        spelerY - vijandY > -99) {
+       aantal= aantal +1
+        console.log("botsing" + aantal) 
+        return true;
+   }
+     // check of HP 0 is , of tijd op is, of ...
   return false;
 };
 
@@ -148,6 +157,10 @@ function draw() {
   }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
+
+  } 
+  if (spelStatus === UITLEG) {
+    // teken uitleg scherm
 
   }
 }
