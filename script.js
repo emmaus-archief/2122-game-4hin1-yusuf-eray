@@ -21,6 +21,7 @@ var snelheidX = 2;
 var snelheidY = 2;
 var vijandX = 1200;
 var vijandY = 400;
+var aantal;
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -112,8 +113,7 @@ var checkGameOver = function () {
          spelerX - vijandX > -99 &&
          spelerY - vijandY <99 &&
         spelerY - vijandY > -99) {
-       aantal= aantal +1
-        console.log("botsing" + aantal) 
+        console.log("botsing") 
         return true;
    }
      // check of HP 0 is , of tijd op is, of ...
@@ -150,13 +150,19 @@ function draw() {
     if (checkGameOver()) {
       spelStatus = GAMEOVER;
     }
+       console.log ("spelen");
   }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
+    console.log ("game over");
+    textSize(200);
+    fill("white");
+    text("GAME OVER!", 10 , 350);
 
   } 
   if (spelStatus === UITLEG) {
     // teken uitleg scherm
+    console.log ("uitleg");
 
   }
 }
