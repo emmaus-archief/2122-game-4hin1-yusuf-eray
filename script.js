@@ -158,8 +158,8 @@ function draw() {
     // teken game-over scherm
     console.log ("game over");
     textSize(200);
-    fill("white");
-    text("GAME OVER!", 10 , 350);
+    fill("red");
+    text("NICE   SHOT!", 10 , 350);
 
   } 
   if (spelStatus === UITLEG) {
