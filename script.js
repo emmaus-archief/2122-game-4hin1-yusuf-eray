@@ -85,9 +85,11 @@ var verwerkBotsing = function () {
  */
 var tekenAlles = function () {
   // achtergrond
+  
    fill ("green");
    rect(0,0, 1280, 720);
-   line(20,20,20,20);
+   fill ("black");
+   line(0,350,750,350);
 
   // kogel
      fill ('green');
