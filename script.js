@@ -16,9 +16,9 @@ const UITLEG = 8;
 var spelStatus = SPELEN;
 
 var spelerX = 200; // x-positie van speler
-var spelerY = 400; // y-positie van speler
-var snelheidX = 2;
-var snelheidY = 2;
+var spelerY = 550; // y-positie van speler
+var snelheidX = 0;
+var snelheidY = 0;
 var vijandX = 1200;
 var vijandY = 400;
 var aantal;
@@ -87,7 +87,7 @@ var tekenAlles = function () {
   // achtergrond
    fill ("green");
    rect(0,0, 1280, 720);
- 
+   line(20,20,20,20);
 
   // kogel
      fill ('green');
