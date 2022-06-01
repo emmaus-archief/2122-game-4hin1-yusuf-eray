@@ -19,8 +19,8 @@ var spelerX = 200; // x-positie van speler
 var spelerY = 550; // y-positie van speler
 var snelheidX = 0;
 var snelheidY = 0;
-var vijandX = 1200;
-var vijandY = 400;
+var vijandX = 150;
+var vijandY = 150;
 var aantal;
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
