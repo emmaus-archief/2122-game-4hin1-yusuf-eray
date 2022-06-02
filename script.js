@@ -22,6 +22,8 @@ var snelheidY = 0;
 var vijandX = 150;
 var vijandY = 150;
 var aantal;
+var punten = 1000;
+
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -36,6 +38,9 @@ var beweegAlles = function () {
     snelheidX = (mouseX - spelerX) /100;
     snelheidY = (mouseY - spelerY) /100;
   }
+  
+  punten = punten - 1;
+  
   if (spelerX < 100 ) {
     snelheidX = snelheidX * -1;
   }
@@ -103,7 +108,9 @@ var tekenAlles = function () {
   ellipse(vijandX, vijandY, 100, 100);
 
   // punten en health
-
+  fill ("black");
+  textSize (50);
+  text(punten, 630, 50) 
 };
 
 /**
