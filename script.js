@@ -157,10 +157,16 @@ function draw() {
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
     console.log ("game over");
-    textSize(200);
+    textSize(50);
     fill("red");
-    text("NICE   SHOT!", 10 , 350);
-
+    text("NICE SHOT! ", 10 , 350);
+    fill("red");
+    text("druk spatie voor start", 50, 400);
+    if(keyIsDown(32)) { //spatie
+      spelerX= 200;
+      spelerY= 550;
+      spelStatus = SPELEN;
+    }
   } 
   if (spelStatus === UITLEG) {
     // teken uitleg scherm
