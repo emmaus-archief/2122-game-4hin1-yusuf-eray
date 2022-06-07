@@ -35,7 +35,7 @@ Basis: uitleg, spelen, afgaan en punten
 ### Uitbreidingen 1
 Uitbreiding: *bedenk iets, bijvoorbeeld meer tegenstanders*
 - [ ] maak extra stuiterlijn
-- [ ] *later uitwerken*
+- [ ] Voeg een tijd aan
 - [ ] *later uitwerken*
 
 ### Uitbreidingen 2

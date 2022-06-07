@@ -24,6 +24,10 @@ var vijandY = 150;
 var aantal;
 var punten = 1000;
 
+
+ var mouseIsPressedVorige = false;
+ var mouseIsPressedNu = false;
+
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
 /* ********************************************* */
@@ -33,13 +37,16 @@ var punten = 1000;
  */
 var beweegAlles = function () {
   // speler
-  if (mouseIsPressed) {
+  mouseIsPressedVorige = mouseIsPressedNu;
+  mouseIsPressedNu = mouseIsPressed;
+  if (mouseIsPressedNu === true && mouseIsPressedVorige === false) {
     // nieuwe waaarde voor snelheidX en snelheidY maken
     snelheidX = (mouseX - spelerX) /100;
     snelheidY = (mouseY - spelerY) /100;
+    punten = punten - 1;  
   }
   
-  punten = punten - 1;
+  
   
   if (spelerX < 100 ) {
     snelheidX = snelheidX * -1;
