@@ -22,11 +22,9 @@ var snelheidY = 0;
 var vijandX = 150;
 var vijandY = 150;
 var aantal;
-var punten = 1000;
-
-
- var mouseIsPressedVorige = false;
- var mouseIsPressedNu = false;
+var punten = 5;
+var mouseIsPressedVorige = false;
+var mouseIsPressedNu = false;
 
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
@@ -146,6 +144,9 @@ var checkGameOver = function () {
  * de p5 library, zodra het spel geladen is in de browser
  */
 function setup() {
+
+  frameRate(50);
+  textSize(60);
   // Maak een canvas (rechthoek) waarin je je speelveld kunt tekenen
   createCanvas(1280, 720);
 
