@@ -170,6 +170,11 @@ function draw() {
     }
        console.log ("spelen");
   }
+  if (spelstatus === GEWONNEN) {
+    //teken gewonnen scherm
+    console.log("gewonnen");
+    textSize(150)
+  }
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
     console.log ("game over");
