@@ -68,9 +68,8 @@ var beweegAlles = function () {
  snelheidX = snelheidX * 0.99;
  snelheidY = snelheidY * 0.99;
   
-  
   // vijand
-
+  
   // kogel
 };
 
@@ -127,6 +126,9 @@ var checkGameOver = function () {
          spelerY - vijandY <15 &&
         spelerY - vijandY > -15) {
         console.log("botsing") 
+        return true;
+   }
+   if (punten === 0){
         return true;
    }
      // check of HP 0 is , of tijd op is, of ...
