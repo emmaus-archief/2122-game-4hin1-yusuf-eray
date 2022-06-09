@@ -21,19 +21,10 @@ var snelheidX = 0;
 var snelheidY = 0;
 var vijandX = 150;
 var vijandY = 150;
-<<<<<<< HEAD
-var aantal;  
-var punten = 5;
-
-
- var mouseIsPressedVorige = false;
- var mouseIsPressedNu = false;
-=======
 var aantal;
 var punten = 5;
 var mouseIsPressedVorige = false;
 var mouseIsPressedNu = false;
->>>>>>> origin/master
 
 /* ********************************************* */
 /* functies die je gebruikt in je game           */
@@ -113,16 +104,12 @@ var tekenAlles = function () {
   // kogel
      fill ('green');
      
-  // speler
-  fill("white");
-  
-  ellipse(spelerX, spelerY, 80, 80);
-  fill("red");
-  ellipse(spelerX, spelerY, 10, 10);
-  
    // vijand
   fill("black");
   ellipse(vijandX, vijandY, 100, 100);
+  // speler
+  fill("white");
+  ellipse(spelerX , spelerY , 80, 80);
 
   // punten en health
   fill ("black");
@@ -135,10 +122,10 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-   if (spelerX - vijandX <10 &&
-         spelerX - vijandX > -10 &&
-         spelerY - vijandY <10 &&
-        spelerY - vijandY > -10) {
+   if (spelerX - vijandX <15 &&
+         spelerX - vijandX > -15 &&
+         spelerY - vijandY <15 &&
+        spelerY - vijandY > -15) {
         console.log("botsing") 
         return true;
    }
