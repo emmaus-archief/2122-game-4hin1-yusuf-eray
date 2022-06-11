@@ -189,6 +189,15 @@ function draw() {
   if (spelStatus === UITLEG) {
     // teken uitleg scherm
     console.log ("uitleg");
-
+     textSize(50);
+     fill("green"); 
+     rect (0,0,1280,720);
+     fill("white");
+     text("uitleg doe je ding, druk op enter", 100, 100);
+     if(keyIsDown(13)) { //enter
+      spelerX= 400;
+      spelStatus = SPELEN;
+    }
   }
+  
 }
