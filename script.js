@@ -121,10 +121,10 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-   if (spelerX - vijandX <15 &&
-         spelerX - vijandX > -15 &&
-         spelerY - vijandY <15 &&
-        spelerY - vijandY > -15) {
+   if (spelerX - vijandX <17 &&
+         spelerX - vijandX > -17 &&
+         spelerY - vijandY <17 &&
+        spelerY - vijandY > -17) {
         console.log("botsing") 
         return true;
    }
@@ -170,11 +170,7 @@ function draw() {
     }
        console.log ("spelen");
   }
-  if (spelstatus === GEWONNEN) {
-    //teken gewonnen scherm
-    console.log("gewonnen");
-    textSize(150)
-  }
+ 
   if (spelStatus === GAMEOVER) {
     // teken game-over scherm
     console.log ("game over");
