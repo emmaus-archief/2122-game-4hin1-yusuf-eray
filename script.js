@@ -121,10 +121,10 @@ var tekenAlles = function () {
  * anders return false
  */
 var checkGameOver = function () {
-   if (spelerX - vijandX <17 &&
-         spelerX - vijandX > -17 &&
-         spelerY - vijandY <17 &&
-        spelerY - vijandY > -17) {
+   if (spelerX - vijandX <10 &&
+         spelerX - vijandX > -10 &&
+         spelerY - vijandY <10 &&
+        spelerY - vijandY > -10) {
         console.log("botsing") 
         return true;
    }
